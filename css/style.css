@@ -1,0 +1,213 @@
+/* BAR CHART */
+.barChart {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 5px solid orange;
+    border-radius: 25px;
+    background-color: black;
+    width: 28vw;
+    /* fill changes both xAxis and zAxis font colors together */
+    /*fill: yellowgreen;*/
+    font-family: fantasy;
+}
+.barChart rect {
+    /* fill changes all rects to same color */
+    /*fill: red;*/
+    stroke-width: 2px;
+    /*stroke-dasharray: 5, 1;*/
+    transition: all 0.2s ease-in-out;
+}
+.barChart rect:nth-child(even):not(.deselected) {
+    fill: red;
+    stroke: tomato;
+}
+.barChart rect:nth-child(odd):not(.deselected) {
+    fill: blue;
+    stroke: cornflowerblue;
+}
+.barChart rect.deselected {
+    fill: black;
+    opacity: 0.9;
+    stroke: white;
+    stroke-dasharray: 0;
+    stroke-opacity: 0.25;
+    transition: all 0.2s ease-in-out;
+}
+.barChart rect.bar:hover {
+    opacity: 1;
+    stroke-dasharray: 0;
+}
+.barChart rect.deselected:hover {
+    stroke-dasharray: 0;
+    stroke: white;
+    stroke-opacity: 0.75;
+}
+/*.barChart g.tick {
+    ----- this changes both yAxis and xAxis text colors
+    fill: blueviolet;
+}*/
+.barChart g.axis.y {
+    fill: yellow;
+}
+.barChart g.axis.x {
+    fill: aqua;
+}
+.barChart text.x-axis-label {
+    fill: yellow;
+}
+.barChart text.y-axis-label {
+    fill: aqua;
+}
+.barChart path.domain {
+    fill: hotpink;
+    opacity: 0.25;
+    stroke: white;
+    stroke-width: 2px;
+}
+.barChart .grid-line line {
+    stroke: lime;
+    opacity: 1;
+    stroke-width: 5px;
+}
+
+
+/* PIE CHART */
+.pieChart {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 5px solid orange;
+    border-radius: 25px;
+    background-color: black;
+    width: 28vw;
+    /* fill changes both xAxis and zAxis font colors together */
+    /*fill: yellowgreen;*/
+    font-family: fantasy;
+}
+/*.pieChart .pie-slice[class*="_"] path {
+    transition: all 0.2s ease-in-out;
+}*/
+.pieChart .pie-slice._0 path {
+    fill: red;
+}
+.pieChart .pie-slice._1 path {
+    fill: orange;
+}
+.pieChart .pie-slice._2 path {
+    fill: yellow;
+}
+.pieChart .pie-slice._3 path {
+    fill: green;
+}
+.pieChart .pie-slice._4 path {
+    fill: blue;
+}
+.pieChart .pie-slice._5 path {
+    fill: purple;
+}
+.pieChart .pie-slice._6 path {
+    fill: violet;
+}
+.pieChart .pie-slice._7 path {
+    fill: pink;
+}
+.pieChart .pie-slice {
+    font-size: 1.5em;
+    stroke: black;
+    stroke-width: 2px;
+    text-shadow: 2px 2px 2px white;
+}
+.pieChart .pie-slice._0 {
+    fill: pink;
+}
+.pieChart .pie-slice._1 {
+    fill: red;
+}
+.pieChart .pie-slice._2 {
+    fill: purple;
+}
+.pieChart .pie-slice._3 {
+    fill: orange;
+}
+.pieChart .pie-slice._4 {
+    fill: yellow;
+}
+.pieChart .pie-slice._5 {
+    fill: orange;
+}
+.pieChart .pie-slice._6 {
+    fill: red;
+}
+.pieChart .pie-slice._7 {
+    fill: green;
+}
+.pieChart g.pie-slice.deselected path {
+    fill: white;
+    opacity: 0.5;
+    stroke: white;
+    stroke-width: 3px;
+}
+.pieChart .pie-slice path:hover {
+    opacity: 0.5;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-opacity: 1;
+}
+
+
+/* LINE CHART */
+.lineChart {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 5px solid orange;
+    border-radius: 25px;
+    background-color: black;
+    max-width: 85%; /* max-width required before width for smaller scaling */
+    width: 85vw; /* max-width required before width for smaller scaling */
+    /* fill changes both xAxis and zAxis font colors together */
+    fill: yellowgreen;
+    font-family: fantasy;
+}
+.lineChart rect {
+    /* fill changes all rects to same color */
+    /*fill: red;*/
+    stroke-width: 2px;
+    /*stroke-dasharray: 5, 1;*/
+    transition: all 0.2s ease-in-out;
+}
+.lineChart g.axis.y {
+    fill: yellow;
+}
+.lineChart g.axis.x {
+    fill: aqua;
+}
+.lineChart text.x-axis-label {
+    fill: yellow;
+}
+.lineChart text.y-axis-label {
+    fill: aqua;
+}
+.lineChart path.domain {
+    fill: hotpink;
+    opacity: 0.25;
+    stroke: white;
+    stroke-width: 2px;
+}
+.lineChart .grid-line line {
+    stroke: indianred;
+    opacity: 1;
+    stroke-width: 5px;
+}
+.lineChart .brush rect.extent {
+    fill: orange;
+    fill-opacity: 0.5;
+    stroke-width: 5px;
+    stroke: yellow;
+}
+.lineChart rect.background {
+    fill: green;
+    opacity: 0.2;
+    visibility: visible; /* doesn't seem to "show visible unless using dev tools */
+}

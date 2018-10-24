@@ -1,0 +1,18 @@
+[
+    {"date": "01/03/2018", "name": "Tom", "store": "Acme", "state": "WA", "spend": 100},
+    {"date": "02/02/2018", "name": "Tom", "store": "Deals'R'Us", "state": "AZ", "spend": 200},
+    {"date": "03/01/2018", "name": "Bob", "store": "CostCut", "state": "FL", "spend": 150},
+    {"date": "04/03/2018", "name": "Bob", "store": "Acme", "state": "NY", "spend": 200},
+    {"date": "05/02/2018", "name": "Bob", "store": "Biggiez", "state": "FL", "spend": 50},
+    {"date": "06/04/2018", "name": "Chris", "store": "CostCut", "state": "CO", "spend": 75},
+    {"date": "07/07/2018", "name": "Chris", "store": "Acme", "state": "FL", "spend": 200},
+    {"date": "08/07/2018", "name": "Chris", "store": "Euro$", "state": "NY", "spend": 350},
+    {"date": "09/04/2018", "name": "Tim", "store": "CostCut", "state": "WA", "spend": 50},
+    {"date": "10/02/2018", "name": "Tim", "store": "Euro$", "state": "OK", "spend": 75},
+    {"date": "11/08/2018", "name": "Tim", "store": "Deals'R'Us", "state": "CO", "spend": 200},
+    {"date": "12/09/2018", "name": "Tim", "store": "Biggiez", "state": "AZ", "spend": 350},
+    {"date": "13/01/2018", "name": "Richie", "store": "Deals'R'Us", "state": "CO", "spend": 150},
+    {"date": "14/02/2018", "name": "Richie", "store": "CostCut", "state": "WA", "spend": 50},
+    {"date": "15/07/2018", "name": "Mary", "store": "Euro$", "state": "OK", "spend": 100},
+    {"date": "16/02/2018", "name": "Mary", "store": "Deals'R'Us", "state": "WA", "spend": 250}
+]
